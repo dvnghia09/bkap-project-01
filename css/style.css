@@ -59,11 +59,13 @@
 .product-line {
     position: absolute;
     top: -36px;
+    min-width: 260px;
+    text-align: center;
     right: 50%;
     transform: translateX(50%);
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background: var(--md);
     color: #fff;
     line-height: 36px;
