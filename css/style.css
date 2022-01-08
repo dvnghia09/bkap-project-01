@@ -1,0 +1,275 @@
+:root {
+    --md: #046634;
+}
+
+.page{
+    overflow: hidden;
+}
+
+.header-page{
+    background-color: var(--md);
+    height: 146px;
+    display: flex;
+}
+
+.logo{
+    margin-bottom: 13px;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.nav-menu{
+    margin-bottom: 26px;
+}
+
+.nav-menu a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav-menu a:hover{
+    color: rgb(226, 226, 226);
+}
+
+
+.category-item{
+    margin-top: 26px;
+}
+
+.category-cart-title{
+    padding: 0px !important ;
+    background-color: var(--md);
+}
+
+.category-cart-title p{
+    text-align: center;
+    font-weight: 700;
+    line-height: 40px;
+    color: #fff;
+}
+
+.product-border{
+    border: 1px solid var(--md);
+    position: relative;
+    margin-top: 70px;
+}
+
+.product-line {
+    position: absolute;
+    top: -36px;
+    right: 50%;
+    transform: translateX(50%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: var(--md);
+    color: #fff;
+    line-height: 36px;
+    padding: 0 36px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--md);
+    margin-bottom: 20px;
+}
+
+.product-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: #ebebeb;
+    padding: 12px 12px;
+}
+
+.page-product{
+    border: none;
+}
+
+.page-product:hover{
+    text-decoration: none;
+}
+
+.product-price {
+    line-height: 1.1rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--md);
+}
+
+.care{
+    background-color: var(--md);
+    margin-top: 18px;
+}
+
+.care-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+}
+
+.care-item-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 44px;
+}
+
+.care-item-num {
+    font-size: 1.7rem;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 5px;
+}
+
+.care__number {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #94c644;
+}
+
+.footer-content {
+    font-size: 1.2rem;
+    margin-top: 12px;
+    letter-spacing: 0.2px;
+}
+
+.social-network {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-sub__content{
+    line-height: 60px;
+}
+
+/* nav mobile */
+@keyframes navAnimation {
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{ 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.nav-mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    max-width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    display: none;
+    animation: navAnimation linear 0.3s;
+}
+
+.nav-close{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    border-top: 1px solid #ccc ;
+    text-align: center;
+}
+
+.nav-close-icon {
+    line-height: 40px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+
+
+.nav-mobile-title-sub {
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--md);
+    margin: 0;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.nav-mobile-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-mobile-item__link {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 42px;
+    border-bottom: 1px solid #d5d4d4;
+    display: block;
+    color: var(--text-color);
+    padding-left: 16px;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;  
+}
+
+.nav-mobile-item__link:hover{
+    opacity: 0.5;
+}
+
+@keyframes showUp { 
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.nav-mobile-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0 ,0.3);
+    z-index: 9;
+    display: none;
+    animation: showUp linear 0.3s;
+}
+
+.active-sub-mobile{
+    display: block !important;
+}
+
+.nav-mobile-item__link:hover{
+    text-decoration: none;
+    color: #000;
+}
+
